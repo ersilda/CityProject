@@ -4,7 +4,7 @@
  */
 package com.mycompany.cityproject;
 
-import java.util.HashMap;
+import java.util.HashMap; 
 
 public abstract class CityReader implements ICityReader {
 

@@ -9,12 +9,12 @@ import java.sql.SQLException;
 public class CityProject {
 
     public static void main(String[] args) throws SQLException {
+        CityAlgorithm algo = new CityAlgorithm();
+        
         FileCityReader fileCityReader = new FileCityReader(".\\CSVCitta.csv");
-        fileCityReader.display();
-
-        System.out.println("");
-
+        algo.computeCityOccurrences(fileCityReader);
+        
         DbCityReader dbCityReader = new DbCityReader();
-        dbCityReader.display();
+        algo.computeCityOccurrences(dbCityReader);
     }
 }
